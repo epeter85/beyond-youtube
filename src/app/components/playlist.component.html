@@ -1,0 +1,13 @@
+<div class="row card-group">
+    <div class="col-4">
+      <div class="card" style="width: 18rem;" *ngFor="let video of videos">
+        <img class="card-img-top" src='{{video.snippet.thumbnails.default.url}}' alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{video.snippet.title}}</h5>
+          <p class="card-text">{{video.snippet.publishedAt}}</p>
+          <p class="card-text">{{video.snippet.description}}</p>
+          <a class="btn btn-primary" (click)="loadVideoPage(video)">Play</a>
+        </div>
+      </div>
+    </div>
+  </div>

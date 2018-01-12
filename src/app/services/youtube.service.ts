@@ -10,6 +10,7 @@ export class YoutubeService {
   constructor(public http: Http) {
 
     console.log('Data service connected...');
+
   }
 
   getVideos() {

@@ -1,6 +1,6 @@
 import 'jquery';
 import 'bootstrap';
-console.log('here');
+
 import 'core-js/client/shim';
 import 'zone.js/dist/zone';
 
@@ -9,11 +9,9 @@ import 'rxjs';
 
 import './index.scss';
 
-
-
 import {enableProdMode} from '@angular/core';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
-import {AppModule} from './app';
+import { AppModule } from './app/app.module';
 
 declare var process: any;
 if (process.env.NODE_ENV === 'production') {
